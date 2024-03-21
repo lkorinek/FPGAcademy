@@ -1,0 +1,7 @@
+{
+	"common_dir" : "/home/korinlu/Dev/fpgaacademy/lab1/",
+	"acds_version" : "Version 23.1std.0",
+	"platform" : "linux",
+	"os" : "Manjaro Linux",
+	"qpf" : "part1.qpf"
+}
