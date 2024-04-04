@@ -1,0 +1,868 @@
+|part5
+SW[0] => b_in[5].OUTPUTSELECT
+SW[0] => b_in[4].OUTPUTSELECT
+SW[0] => b_in[3].OUTPUTSELECT
+SW[0] => b_in[2].OUTPUTSELECT
+SW[0] => b_in[1].OUTPUTSELECT
+SW[0] => b_in[0].OUTPUTSELECT
+SW[0] => a_in[5].OUTPUTSELECT
+SW[0] => a_in[4].OUTPUTSELECT
+SW[0] => a_in[3].OUTPUTSELECT
+SW[0] => a_in[2].OUTPUTSELECT
+SW[0] => a_in[1].OUTPUTSELECT
+SW[0] => a_in[0].OUTPUTSELECT
+SW[1] => a_in[0].DATAB
+SW[1] => b_in[0].DATAB
+SW[2] => a_in[1].DATAB
+SW[2] => b_in[1].DATAB
+SW[3] => a_in[2].DATAB
+SW[3] => b_in[2].DATAB
+SW[4] => a_in[3].DATAB
+SW[4] => b_in[3].DATAB
+SW[5] => a_in[4].DATAB
+SW[5] => b_in[4].DATAB
+SW[6] => a_in[5].DATAB
+SW[6] => b_in[5].DATAB
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+KEY0 => ~NO_FANOUT~
+KEY1 => ~NO_FANOUT~
+KEY[3] => ~NO_FANOUT~
+KEY[2] => ~NO_FANOUT~
+KEY[1] => reg_6bit:reg_6bit_inst0.clk
+KEY[1] => reg_6bit:reg_6bit_inst1.clk
+KEY[1] => LEDR[2].DATAIN
+KEY[0] => reg_6bit:reg_6bit_inst0.r_n
+KEY[0] => reg_6bit:reg_6bit_inst1.r_n
+KEY[0] => LEDR[1].DATAIN
+LEDR[0] <= adder_6bit:adder_6bit_inst0.c_out
+LEDR[1] <= KEY[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= KEY[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= <GND>
+LEDR[4] <= <GND>
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= <GND>
+LEDR[9] <= <GND>
+HEX0[6] <= num_7seg_display:num_7seg_display_inst4.hex[6]
+HEX0[5] <= num_7seg_display:num_7seg_display_inst4.hex[5]
+HEX0[4] <= num_7seg_display:num_7seg_display_inst4.hex[4]
+HEX0[3] <= num_7seg_display:num_7seg_display_inst4.hex[3]
+HEX0[2] <= num_7seg_display:num_7seg_display_inst4.hex[2]
+HEX0[1] <= num_7seg_display:num_7seg_display_inst4.hex[1]
+HEX0[0] <= num_7seg_display:num_7seg_display_inst4.hex[0]
+HEX1[6] <= num_7seg_display:num_7seg_display_inst5.hex[6]
+HEX1[5] <= num_7seg_display:num_7seg_display_inst5.hex[5]
+HEX1[4] <= num_7seg_display:num_7seg_display_inst5.hex[4]
+HEX1[3] <= num_7seg_display:num_7seg_display_inst5.hex[3]
+HEX1[2] <= num_7seg_display:num_7seg_display_inst5.hex[2]
+HEX1[1] <= num_7seg_display:num_7seg_display_inst5.hex[1]
+HEX1[0] <= num_7seg_display:num_7seg_display_inst5.hex[0]
+HEX2[6] <= num_7seg_display:num_7seg_display_inst2.hex[6]
+HEX2[5] <= num_7seg_display:num_7seg_display_inst2.hex[5]
+HEX2[4] <= num_7seg_display:num_7seg_display_inst2.hex[4]
+HEX2[3] <= num_7seg_display:num_7seg_display_inst2.hex[3]
+HEX2[2] <= num_7seg_display:num_7seg_display_inst2.hex[2]
+HEX2[1] <= num_7seg_display:num_7seg_display_inst2.hex[1]
+HEX2[0] <= num_7seg_display:num_7seg_display_inst2.hex[0]
+HEX3[6] <= num_7seg_display:num_7seg_display_inst3.hex[6]
+HEX3[5] <= num_7seg_display:num_7seg_display_inst3.hex[5]
+HEX3[4] <= num_7seg_display:num_7seg_display_inst3.hex[4]
+HEX3[3] <= num_7seg_display:num_7seg_display_inst3.hex[3]
+HEX3[2] <= num_7seg_display:num_7seg_display_inst3.hex[2]
+HEX3[1] <= num_7seg_display:num_7seg_display_inst3.hex[1]
+HEX3[0] <= num_7seg_display:num_7seg_display_inst3.hex[0]
+HEX4[6] <= num_7seg_display:num_7seg_display_inst0.hex[6]
+HEX4[5] <= num_7seg_display:num_7seg_display_inst0.hex[5]
+HEX4[4] <= num_7seg_display:num_7seg_display_inst0.hex[4]
+HEX4[3] <= num_7seg_display:num_7seg_display_inst0.hex[3]
+HEX4[2] <= num_7seg_display:num_7seg_display_inst0.hex[2]
+HEX4[1] <= num_7seg_display:num_7seg_display_inst0.hex[1]
+HEX4[0] <= num_7seg_display:num_7seg_display_inst0.hex[0]
+HEX5[6] <= num_7seg_display:num_7seg_display_inst1.hex[6]
+HEX5[5] <= num_7seg_display:num_7seg_display_inst1.hex[5]
+HEX5[4] <= num_7seg_display:num_7seg_display_inst1.hex[4]
+HEX5[3] <= num_7seg_display:num_7seg_display_inst1.hex[3]
+HEX5[2] <= num_7seg_display:num_7seg_display_inst1.hex[2]
+HEX5[1] <= num_7seg_display:num_7seg_display_inst1.hex[1]
+HEX5[0] <= num_7seg_display:num_7seg_display_inst1.hex[0]
+
+
+|part5|reg_6bit:reg_6bit_inst0
+clk => pos_dff_resetn:dff_inst0.clk
+clk => pos_dff_resetn:dff_inst1.clk
+clk => pos_dff_resetn:dff_inst2.clk
+clk => pos_dff_resetn:dff_inst3.clk
+clk => pos_dff_resetn:dff_inst4.clk
+clk => pos_dff_resetn:dff_inst5.clk
+r_n => pos_dff_resetn:dff_inst0.r_n
+r_n => pos_dff_resetn:dff_inst1.r_n
+r_n => pos_dff_resetn:dff_inst2.r_n
+r_n => pos_dff_resetn:dff_inst3.r_n
+r_n => pos_dff_resetn:dff_inst4.r_n
+r_n => pos_dff_resetn:dff_inst5.r_n
+d[0] => pos_dff_resetn:dff_inst0.d
+d[1] => pos_dff_resetn:dff_inst1.d
+d[2] => pos_dff_resetn:dff_inst2.d
+d[3] => pos_dff_resetn:dff_inst3.d
+d[4] => pos_dff_resetn:dff_inst4.d
+d[5] => pos_dff_resetn:dff_inst5.d
+q[0] <= pos_dff_resetn:dff_inst0.q
+q[1] <= pos_dff_resetn:dff_inst1.q
+q[2] <= pos_dff_resetn:dff_inst2.q
+q[3] <= pos_dff_resetn:dff_inst3.q
+q[4] <= pos_dff_resetn:dff_inst4.q
+q[5] <= pos_dff_resetn:dff_inst5.q
+
+
+|part5|reg_6bit:reg_6bit_inst0|pos_dff_resetn:dff_inst0
+d => d_latch_resetn:master.d
+clk => d_latch_resetn:slave.clk
+clk => d_latch_resetn:master.clk
+r_n => d_latch_resetn:master.r_n
+r_n => d_latch_resetn:slave.r_n
+q <= d_latch_resetn:slave.q
+
+
+|part5|reg_6bit:reg_6bit_inst0|pos_dff_resetn:dff_inst0|d_latch_resetn:master
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+r_n => q$latch.ACLR
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|reg_6bit:reg_6bit_inst0|pos_dff_resetn:dff_inst0|d_latch_resetn:slave
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+r_n => q$latch.ACLR
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|reg_6bit:reg_6bit_inst0|pos_dff_resetn:dff_inst1
+d => d_latch_resetn:master.d
+clk => d_latch_resetn:slave.clk
+clk => d_latch_resetn:master.clk
+r_n => d_latch_resetn:master.r_n
+r_n => d_latch_resetn:slave.r_n
+q <= d_latch_resetn:slave.q
+
+
+|part5|reg_6bit:reg_6bit_inst0|pos_dff_resetn:dff_inst1|d_latch_resetn:master
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+r_n => q$latch.ACLR
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|reg_6bit:reg_6bit_inst0|pos_dff_resetn:dff_inst1|d_latch_resetn:slave
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+r_n => q$latch.ACLR
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|reg_6bit:reg_6bit_inst0|pos_dff_resetn:dff_inst2
+d => d_latch_resetn:master.d
+clk => d_latch_resetn:slave.clk
+clk => d_latch_resetn:master.clk
+r_n => d_latch_resetn:master.r_n
+r_n => d_latch_resetn:slave.r_n
+q <= d_latch_resetn:slave.q
+
+
+|part5|reg_6bit:reg_6bit_inst0|pos_dff_resetn:dff_inst2|d_latch_resetn:master
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+r_n => q$latch.ACLR
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|reg_6bit:reg_6bit_inst0|pos_dff_resetn:dff_inst2|d_latch_resetn:slave
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+r_n => q$latch.ACLR
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|reg_6bit:reg_6bit_inst0|pos_dff_resetn:dff_inst3
+d => d_latch_resetn:master.d
+clk => d_latch_resetn:slave.clk
+clk => d_latch_resetn:master.clk
+r_n => d_latch_resetn:master.r_n
+r_n => d_latch_resetn:slave.r_n
+q <= d_latch_resetn:slave.q
+
+
+|part5|reg_6bit:reg_6bit_inst0|pos_dff_resetn:dff_inst3|d_latch_resetn:master
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+r_n => q$latch.ACLR
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|reg_6bit:reg_6bit_inst0|pos_dff_resetn:dff_inst3|d_latch_resetn:slave
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+r_n => q$latch.ACLR
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|reg_6bit:reg_6bit_inst0|pos_dff_resetn:dff_inst4
+d => d_latch_resetn:master.d
+clk => d_latch_resetn:slave.clk
+clk => d_latch_resetn:master.clk
+r_n => d_latch_resetn:master.r_n
+r_n => d_latch_resetn:slave.r_n
+q <= d_latch_resetn:slave.q
+
+
+|part5|reg_6bit:reg_6bit_inst0|pos_dff_resetn:dff_inst4|d_latch_resetn:master
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+r_n => q$latch.ACLR
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|reg_6bit:reg_6bit_inst0|pos_dff_resetn:dff_inst4|d_latch_resetn:slave
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+r_n => q$latch.ACLR
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|reg_6bit:reg_6bit_inst0|pos_dff_resetn:dff_inst5
+d => d_latch_resetn:master.d
+clk => d_latch_resetn:slave.clk
+clk => d_latch_resetn:master.clk
+r_n => d_latch_resetn:master.r_n
+r_n => d_latch_resetn:slave.r_n
+q <= d_latch_resetn:slave.q
+
+
+|part5|reg_6bit:reg_6bit_inst0|pos_dff_resetn:dff_inst5|d_latch_resetn:master
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+r_n => q$latch.ACLR
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|reg_6bit:reg_6bit_inst0|pos_dff_resetn:dff_inst5|d_latch_resetn:slave
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+r_n => q$latch.ACLR
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|reg_6bit:reg_6bit_inst1
+clk => pos_dff_resetn:dff_inst0.clk
+clk => pos_dff_resetn:dff_inst1.clk
+clk => pos_dff_resetn:dff_inst2.clk
+clk => pos_dff_resetn:dff_inst3.clk
+clk => pos_dff_resetn:dff_inst4.clk
+clk => pos_dff_resetn:dff_inst5.clk
+r_n => pos_dff_resetn:dff_inst0.r_n
+r_n => pos_dff_resetn:dff_inst1.r_n
+r_n => pos_dff_resetn:dff_inst2.r_n
+r_n => pos_dff_resetn:dff_inst3.r_n
+r_n => pos_dff_resetn:dff_inst4.r_n
+r_n => pos_dff_resetn:dff_inst5.r_n
+d[0] => pos_dff_resetn:dff_inst0.d
+d[1] => pos_dff_resetn:dff_inst1.d
+d[2] => pos_dff_resetn:dff_inst2.d
+d[3] => pos_dff_resetn:dff_inst3.d
+d[4] => pos_dff_resetn:dff_inst4.d
+d[5] => pos_dff_resetn:dff_inst5.d
+q[0] <= pos_dff_resetn:dff_inst0.q
+q[1] <= pos_dff_resetn:dff_inst1.q
+q[2] <= pos_dff_resetn:dff_inst2.q
+q[3] <= pos_dff_resetn:dff_inst3.q
+q[4] <= pos_dff_resetn:dff_inst4.q
+q[5] <= pos_dff_resetn:dff_inst5.q
+
+
+|part5|reg_6bit:reg_6bit_inst1|pos_dff_resetn:dff_inst0
+d => d_latch_resetn:master.d
+clk => d_latch_resetn:slave.clk
+clk => d_latch_resetn:master.clk
+r_n => d_latch_resetn:master.r_n
+r_n => d_latch_resetn:slave.r_n
+q <= d_latch_resetn:slave.q
+
+
+|part5|reg_6bit:reg_6bit_inst1|pos_dff_resetn:dff_inst0|d_latch_resetn:master
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+r_n => q$latch.ACLR
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|reg_6bit:reg_6bit_inst1|pos_dff_resetn:dff_inst0|d_latch_resetn:slave
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+r_n => q$latch.ACLR
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|reg_6bit:reg_6bit_inst1|pos_dff_resetn:dff_inst1
+d => d_latch_resetn:master.d
+clk => d_latch_resetn:slave.clk
+clk => d_latch_resetn:master.clk
+r_n => d_latch_resetn:master.r_n
+r_n => d_latch_resetn:slave.r_n
+q <= d_latch_resetn:slave.q
+
+
+|part5|reg_6bit:reg_6bit_inst1|pos_dff_resetn:dff_inst1|d_latch_resetn:master
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+r_n => q$latch.ACLR
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|reg_6bit:reg_6bit_inst1|pos_dff_resetn:dff_inst1|d_latch_resetn:slave
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+r_n => q$latch.ACLR
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|reg_6bit:reg_6bit_inst1|pos_dff_resetn:dff_inst2
+d => d_latch_resetn:master.d
+clk => d_latch_resetn:slave.clk
+clk => d_latch_resetn:master.clk
+r_n => d_latch_resetn:master.r_n
+r_n => d_latch_resetn:slave.r_n
+q <= d_latch_resetn:slave.q
+
+
+|part5|reg_6bit:reg_6bit_inst1|pos_dff_resetn:dff_inst2|d_latch_resetn:master
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+r_n => q$latch.ACLR
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|reg_6bit:reg_6bit_inst1|pos_dff_resetn:dff_inst2|d_latch_resetn:slave
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+r_n => q$latch.ACLR
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|reg_6bit:reg_6bit_inst1|pos_dff_resetn:dff_inst3
+d => d_latch_resetn:master.d
+clk => d_latch_resetn:slave.clk
+clk => d_latch_resetn:master.clk
+r_n => d_latch_resetn:master.r_n
+r_n => d_latch_resetn:slave.r_n
+q <= d_latch_resetn:slave.q
+
+
+|part5|reg_6bit:reg_6bit_inst1|pos_dff_resetn:dff_inst3|d_latch_resetn:master
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+r_n => q$latch.ACLR
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|reg_6bit:reg_6bit_inst1|pos_dff_resetn:dff_inst3|d_latch_resetn:slave
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+r_n => q$latch.ACLR
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|reg_6bit:reg_6bit_inst1|pos_dff_resetn:dff_inst4
+d => d_latch_resetn:master.d
+clk => d_latch_resetn:slave.clk
+clk => d_latch_resetn:master.clk
+r_n => d_latch_resetn:master.r_n
+r_n => d_latch_resetn:slave.r_n
+q <= d_latch_resetn:slave.q
+
+
+|part5|reg_6bit:reg_6bit_inst1|pos_dff_resetn:dff_inst4|d_latch_resetn:master
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+r_n => q$latch.ACLR
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|reg_6bit:reg_6bit_inst1|pos_dff_resetn:dff_inst4|d_latch_resetn:slave
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+r_n => q$latch.ACLR
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|reg_6bit:reg_6bit_inst1|pos_dff_resetn:dff_inst5
+d => d_latch_resetn:master.d
+clk => d_latch_resetn:slave.clk
+clk => d_latch_resetn:master.clk
+r_n => d_latch_resetn:master.r_n
+r_n => d_latch_resetn:slave.r_n
+q <= d_latch_resetn:slave.q
+
+
+|part5|reg_6bit:reg_6bit_inst1|pos_dff_resetn:dff_inst5|d_latch_resetn:master
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+r_n => q$latch.ACLR
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|reg_6bit:reg_6bit_inst1|pos_dff_resetn:dff_inst5|d_latch_resetn:slave
+d => q$latch.DATAIN
+clk => q$latch.LATCH_ENABLE
+r_n => q$latch.ACLR
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|adder_6bit:adder_6bit_inst0
+c_in => full_adder:fa0.c_in
+a[0] => full_adder:fa0.a
+a[1] => full_adder:fa1.a
+a[2] => full_adder:fa2.a
+a[3] => full_adder:fa3.a
+a[4] => full_adder:fa4.a
+a[5] => full_adder:fa5.a
+b[0] => full_adder:fa0.b
+b[1] => full_adder:fa1.b
+b[2] => full_adder:fa2.b
+b[3] => full_adder:fa3.b
+b[4] => full_adder:fa4.b
+b[5] => full_adder:fa5.b
+s[0] <= full_adder:fa0.s
+s[1] <= full_adder:fa1.s
+s[2] <= full_adder:fa2.s
+s[3] <= full_adder:fa3.s
+s[4] <= full_adder:fa4.s
+s[5] <= full_adder:fa5.s
+c_out <= full_adder:fa5.c_out
+
+
+|part5|adder_6bit:adder_6bit_inst0|full_adder:fa0
+c_in => s.IN1
+c_in => mux_2to1:mux.y
+a => s.IN0
+a => comb.IN0
+b => s.IN1
+b => comb.IN1
+b => mux_2to1:mux.x
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= mux_2to1:mux.m
+
+
+|part5|adder_6bit:adder_6bit_inst0|full_adder:fa0|mux_2to1:mux
+s => m.OUTPUTSELECT
+x[0] => m.DATAB
+y[0] => m.DATAA
+m[0] <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|adder_6bit:adder_6bit_inst0|full_adder:fa1
+c_in => s.IN1
+c_in => mux_2to1:mux.y
+a => s.IN0
+a => comb.IN0
+b => s.IN1
+b => comb.IN1
+b => mux_2to1:mux.x
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= mux_2to1:mux.m
+
+
+|part5|adder_6bit:adder_6bit_inst0|full_adder:fa1|mux_2to1:mux
+s => m.OUTPUTSELECT
+x[0] => m.DATAB
+y[0] => m.DATAA
+m[0] <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|adder_6bit:adder_6bit_inst0|full_adder:fa2
+c_in => s.IN1
+c_in => mux_2to1:mux.y
+a => s.IN0
+a => comb.IN0
+b => s.IN1
+b => comb.IN1
+b => mux_2to1:mux.x
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= mux_2to1:mux.m
+
+
+|part5|adder_6bit:adder_6bit_inst0|full_adder:fa2|mux_2to1:mux
+s => m.OUTPUTSELECT
+x[0] => m.DATAB
+y[0] => m.DATAA
+m[0] <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|adder_6bit:adder_6bit_inst0|full_adder:fa3
+c_in => s.IN1
+c_in => mux_2to1:mux.y
+a => s.IN0
+a => comb.IN0
+b => s.IN1
+b => comb.IN1
+b => mux_2to1:mux.x
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= mux_2to1:mux.m
+
+
+|part5|adder_6bit:adder_6bit_inst0|full_adder:fa3|mux_2to1:mux
+s => m.OUTPUTSELECT
+x[0] => m.DATAB
+y[0] => m.DATAA
+m[0] <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|adder_6bit:adder_6bit_inst0|full_adder:fa4
+c_in => s.IN1
+c_in => mux_2to1:mux.y
+a => s.IN0
+a => comb.IN0
+b => s.IN1
+b => comb.IN1
+b => mux_2to1:mux.x
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= mux_2to1:mux.m
+
+
+|part5|adder_6bit:adder_6bit_inst0|full_adder:fa4|mux_2to1:mux
+s => m.OUTPUTSELECT
+x[0] => m.DATAB
+y[0] => m.DATAA
+m[0] <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|adder_6bit:adder_6bit_inst0|full_adder:fa5
+c_in => s.IN1
+c_in => mux_2to1:mux.y
+a => s.IN0
+a => comb.IN0
+b => s.IN1
+b => comb.IN1
+b => mux_2to1:mux.x
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= mux_2to1:mux.m
+
+
+|part5|adder_6bit:adder_6bit_inst0|full_adder:fa5|mux_2to1:mux
+s => m.OUTPUTSELECT
+x[0] => m.DATAB
+y[0] => m.DATAA
+m[0] <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|bintobcd_6bit:bintobcd_6bit_inst0
+bin_num[0] => bcd0[0].DATAIN
+bin_num[1] => LessThan3.IN8
+bin_num[1] => Add3.IN16
+bin_num[1] => reg.DATAA
+bin_num[2] => LessThan1.IN8
+bin_num[2] => Add1.IN10
+bin_num[2] => reg.DATAA
+bin_num[3] => LessThan0.IN6
+bin_num[3] => Add0.IN6
+bin_num[3] => reg.DATAA
+bin_num[4] => LessThan0.IN5
+bin_num[4] => Add0.IN5
+bin_num[4] => reg.DATAA
+bin_num[5] => LessThan0.IN4
+bin_num[5] => Add0.IN4
+bin_num[5] => reg.DATAA
+bcd0[0] <= bin_num[0].DB_MAX_OUTPUT_PORT_TYPE
+bcd0[1] <= reg.DB_MAX_OUTPUT_PORT_TYPE
+bcd0[2] <= reg.DB_MAX_OUTPUT_PORT_TYPE
+bcd0[3] <= reg.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[0] <= reg.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[1] <= reg.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[2] <= reg.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[3] <= reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|bintobcd_6bit:bintobcd_6bit_inst1
+bin_num[0] => bcd0[0].DATAIN
+bin_num[1] => LessThan3.IN8
+bin_num[1] => Add3.IN16
+bin_num[1] => reg.DATAA
+bin_num[2] => LessThan1.IN8
+bin_num[2] => Add1.IN10
+bin_num[2] => reg.DATAA
+bin_num[3] => LessThan0.IN6
+bin_num[3] => Add0.IN6
+bin_num[3] => reg.DATAA
+bin_num[4] => LessThan0.IN5
+bin_num[4] => Add0.IN5
+bin_num[4] => reg.DATAA
+bin_num[5] => LessThan0.IN4
+bin_num[5] => Add0.IN4
+bin_num[5] => reg.DATAA
+bcd0[0] <= bin_num[0].DB_MAX_OUTPUT_PORT_TYPE
+bcd0[1] <= reg.DB_MAX_OUTPUT_PORT_TYPE
+bcd0[2] <= reg.DB_MAX_OUTPUT_PORT_TYPE
+bcd0[3] <= reg.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[0] <= reg.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[1] <= reg.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[2] <= reg.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[3] <= reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|bintobcd_6bit:bintobcd_6bit_inst2
+bin_num[0] => bcd0[0].DATAIN
+bin_num[1] => LessThan3.IN8
+bin_num[1] => Add3.IN16
+bin_num[1] => reg.DATAA
+bin_num[2] => LessThan1.IN8
+bin_num[2] => Add1.IN10
+bin_num[2] => reg.DATAA
+bin_num[3] => LessThan0.IN6
+bin_num[3] => Add0.IN6
+bin_num[3] => reg.DATAA
+bin_num[4] => LessThan0.IN5
+bin_num[4] => Add0.IN5
+bin_num[4] => reg.DATAA
+bin_num[5] => LessThan0.IN4
+bin_num[5] => Add0.IN4
+bin_num[5] => reg.DATAA
+bcd0[0] <= bin_num[0].DB_MAX_OUTPUT_PORT_TYPE
+bcd0[1] <= reg.DB_MAX_OUTPUT_PORT_TYPE
+bcd0[2] <= reg.DB_MAX_OUTPUT_PORT_TYPE
+bcd0[3] <= reg.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[0] <= reg.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[1] <= reg.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[2] <= reg.DB_MAX_OUTPUT_PORT_TYPE
+bcd1[3] <= reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|num_7seg_display:num_7seg_display_inst0
+bcd_num[0] => Mux0.IN19
+bcd_num[0] => Mux1.IN19
+bcd_num[0] => Mux2.IN19
+bcd_num[0] => Mux3.IN19
+bcd_num[0] => Mux4.IN19
+bcd_num[0] => Mux5.IN19
+bcd_num[0] => Mux6.IN19
+bcd_num[1] => Mux0.IN18
+bcd_num[1] => Mux1.IN18
+bcd_num[1] => Mux2.IN18
+bcd_num[1] => Mux3.IN18
+bcd_num[1] => Mux4.IN18
+bcd_num[1] => Mux5.IN18
+bcd_num[1] => Mux6.IN18
+bcd_num[2] => Mux0.IN17
+bcd_num[2] => Mux1.IN17
+bcd_num[2] => Mux2.IN17
+bcd_num[2] => Mux3.IN17
+bcd_num[2] => Mux4.IN17
+bcd_num[2] => Mux5.IN17
+bcd_num[2] => Mux6.IN17
+bcd_num[3] => Mux0.IN16
+bcd_num[3] => Mux1.IN16
+bcd_num[3] => Mux2.IN16
+bcd_num[3] => Mux3.IN16
+bcd_num[3] => Mux4.IN16
+bcd_num[3] => Mux5.IN16
+bcd_num[3] => Mux6.IN16
+hex[6] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+hex[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|num_7seg_display:num_7seg_display_inst1
+bcd_num[0] => Mux0.IN19
+bcd_num[0] => Mux1.IN19
+bcd_num[0] => Mux2.IN19
+bcd_num[0] => Mux3.IN19
+bcd_num[0] => Mux4.IN19
+bcd_num[0] => Mux5.IN19
+bcd_num[0] => Mux6.IN19
+bcd_num[1] => Mux0.IN18
+bcd_num[1] => Mux1.IN18
+bcd_num[1] => Mux2.IN18
+bcd_num[1] => Mux3.IN18
+bcd_num[1] => Mux4.IN18
+bcd_num[1] => Mux5.IN18
+bcd_num[1] => Mux6.IN18
+bcd_num[2] => Mux0.IN17
+bcd_num[2] => Mux1.IN17
+bcd_num[2] => Mux2.IN17
+bcd_num[2] => Mux3.IN17
+bcd_num[2] => Mux4.IN17
+bcd_num[2] => Mux5.IN17
+bcd_num[2] => Mux6.IN17
+bcd_num[3] => Mux0.IN16
+bcd_num[3] => Mux1.IN16
+bcd_num[3] => Mux2.IN16
+bcd_num[3] => Mux3.IN16
+bcd_num[3] => Mux4.IN16
+bcd_num[3] => Mux5.IN16
+bcd_num[3] => Mux6.IN16
+hex[6] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+hex[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|num_7seg_display:num_7seg_display_inst2
+bcd_num[0] => Mux0.IN19
+bcd_num[0] => Mux1.IN19
+bcd_num[0] => Mux2.IN19
+bcd_num[0] => Mux3.IN19
+bcd_num[0] => Mux4.IN19
+bcd_num[0] => Mux5.IN19
+bcd_num[0] => Mux6.IN19
+bcd_num[1] => Mux0.IN18
+bcd_num[1] => Mux1.IN18
+bcd_num[1] => Mux2.IN18
+bcd_num[1] => Mux3.IN18
+bcd_num[1] => Mux4.IN18
+bcd_num[1] => Mux5.IN18
+bcd_num[1] => Mux6.IN18
+bcd_num[2] => Mux0.IN17
+bcd_num[2] => Mux1.IN17
+bcd_num[2] => Mux2.IN17
+bcd_num[2] => Mux3.IN17
+bcd_num[2] => Mux4.IN17
+bcd_num[2] => Mux5.IN17
+bcd_num[2] => Mux6.IN17
+bcd_num[3] => Mux0.IN16
+bcd_num[3] => Mux1.IN16
+bcd_num[3] => Mux2.IN16
+bcd_num[3] => Mux3.IN16
+bcd_num[3] => Mux4.IN16
+bcd_num[3] => Mux5.IN16
+bcd_num[3] => Mux6.IN16
+hex[6] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+hex[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|num_7seg_display:num_7seg_display_inst3
+bcd_num[0] => Mux0.IN19
+bcd_num[0] => Mux1.IN19
+bcd_num[0] => Mux2.IN19
+bcd_num[0] => Mux3.IN19
+bcd_num[0] => Mux4.IN19
+bcd_num[0] => Mux5.IN19
+bcd_num[0] => Mux6.IN19
+bcd_num[1] => Mux0.IN18
+bcd_num[1] => Mux1.IN18
+bcd_num[1] => Mux2.IN18
+bcd_num[1] => Mux3.IN18
+bcd_num[1] => Mux4.IN18
+bcd_num[1] => Mux5.IN18
+bcd_num[1] => Mux6.IN18
+bcd_num[2] => Mux0.IN17
+bcd_num[2] => Mux1.IN17
+bcd_num[2] => Mux2.IN17
+bcd_num[2] => Mux3.IN17
+bcd_num[2] => Mux4.IN17
+bcd_num[2] => Mux5.IN17
+bcd_num[2] => Mux6.IN17
+bcd_num[3] => Mux0.IN16
+bcd_num[3] => Mux1.IN16
+bcd_num[3] => Mux2.IN16
+bcd_num[3] => Mux3.IN16
+bcd_num[3] => Mux4.IN16
+bcd_num[3] => Mux5.IN16
+bcd_num[3] => Mux6.IN16
+hex[6] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+hex[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|num_7seg_display:num_7seg_display_inst4
+bcd_num[0] => Mux0.IN19
+bcd_num[0] => Mux1.IN19
+bcd_num[0] => Mux2.IN19
+bcd_num[0] => Mux3.IN19
+bcd_num[0] => Mux4.IN19
+bcd_num[0] => Mux5.IN19
+bcd_num[0] => Mux6.IN19
+bcd_num[1] => Mux0.IN18
+bcd_num[1] => Mux1.IN18
+bcd_num[1] => Mux2.IN18
+bcd_num[1] => Mux3.IN18
+bcd_num[1] => Mux4.IN18
+bcd_num[1] => Mux5.IN18
+bcd_num[1] => Mux6.IN18
+bcd_num[2] => Mux0.IN17
+bcd_num[2] => Mux1.IN17
+bcd_num[2] => Mux2.IN17
+bcd_num[2] => Mux3.IN17
+bcd_num[2] => Mux4.IN17
+bcd_num[2] => Mux5.IN17
+bcd_num[2] => Mux6.IN17
+bcd_num[3] => Mux0.IN16
+bcd_num[3] => Mux1.IN16
+bcd_num[3] => Mux2.IN16
+bcd_num[3] => Mux3.IN16
+bcd_num[3] => Mux4.IN16
+bcd_num[3] => Mux5.IN16
+bcd_num[3] => Mux6.IN16
+hex[6] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+hex[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|num_7seg_display:num_7seg_display_inst5
+bcd_num[0] => Mux0.IN19
+bcd_num[0] => Mux1.IN19
+bcd_num[0] => Mux2.IN19
+bcd_num[0] => Mux3.IN19
+bcd_num[0] => Mux4.IN19
+bcd_num[0] => Mux5.IN19
+bcd_num[0] => Mux6.IN19
+bcd_num[1] => Mux0.IN18
+bcd_num[1] => Mux1.IN18
+bcd_num[1] => Mux2.IN18
+bcd_num[1] => Mux3.IN18
+bcd_num[1] => Mux4.IN18
+bcd_num[1] => Mux5.IN18
+bcd_num[1] => Mux6.IN18
+bcd_num[2] => Mux0.IN17
+bcd_num[2] => Mux1.IN17
+bcd_num[2] => Mux2.IN17
+bcd_num[2] => Mux3.IN17
+bcd_num[2] => Mux4.IN17
+bcd_num[2] => Mux5.IN17
+bcd_num[2] => Mux6.IN17
+bcd_num[3] => Mux0.IN16
+bcd_num[3] => Mux1.IN16
+bcd_num[3] => Mux2.IN16
+bcd_num[3] => Mux3.IN16
+bcd_num[3] => Mux4.IN16
+bcd_num[3] => Mux5.IN16
+bcd_num[3] => Mux6.IN16
+hex[6] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+hex[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

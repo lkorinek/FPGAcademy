@@ -1,0 +1,117 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/korinlu/Dev/fpgaacademy/digital_logic/lab3/simulation/qsim
+T_opt
+Z2 !s110 1711840153
+Vn_>;AjGKMzLZc?Nn5C1HZ0
+04 17 10 work part2_vhd_vec_tst part2_arch 1
+=1-00e04c3057ee-66089b99-613e2-864e
+R0
+!s12b OEM100
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim +acc
+tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+Epart2
+Z3 w1711840152
+Z4 DPx4 ieee 16 vital_primitives 0 22 Y]H?Y_]z4@VoaWAGJ=36m1
+Z5 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 DjRARHG[mMoWnfQ1@E6OI1
+Z6 DPx4 ieee 12 vital_timing 0 22 6STbz=m1W[80IE06h_el^0
+Z7 DPx8 cyclonev 19 cyclonev_components 0 22 a<5aF4D8K=jjT7FHmJc[20
+Z8 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z9 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+Z10 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 IF4KkEKl]c`WfAAM7V0iN1
+!i122 0
+R1
+Z11 8lab3.vho
+Z12 Flab3.vho
+l0
+L37 1
+V0WX_Kcm5bU_I>GeP=Z9KR1
+!s100 hEmaDPz^1f25@;Sobn6Hl3
+Z13 OL;C;2023.3;77
+32
+R2
+!i10b 1
+Z14 !s108 1711840153.000000
+Z15 !s90 -work|work|lab3.vho|
+Z16 !s107 lab3.vho|
+!i113 0
+Z17 o-work work
+Z18 tExplicit 1 CvgOpt 0
+Astructure
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 5 part2 0 22 0WX_Kcm5bU_I>GeP=Z9KR1
+!i122 0
+l72
+L45 136
+V;[U]K<CLT6AmkG`BCGgJ:1
+!s100 ]a<fz^WK?]2^Uf6l85?D42
+R13
+32
+R2
+!i10b 1
+R14
+R15
+R16
+!i113 0
+R17
+R18
+Epart2_vhd_vec_tst
+Z19 w1711840151
+R8
+R9
+!i122 1
+R1
+Z20 8Waveform.vwf.vht
+Z21 FWaveform.vwf.vht
+l0
+L32 1
+V=3`h38KHe2ml?UT<dhJEn2
+!s100 Rn^^W[=6Ef4Kn6][FbS211
+R13
+32
+R2
+!i10b 1
+R14
+Z22 !s90 -work|work|Waveform.vwf.vht|
+Z23 !s107 Waveform.vwf.vht|
+!i113 0
+R17
+R18
+Apart2_arch
+R8
+R9
+DEx4 work 17 part2_vhd_vec_tst 0 22 =3`h38KHe2ml?UT<dhJEn2
+!i122 1
+l47
+L34 46
+VmLV?fQ1]?Pz@RWL>E=Rf[0
+!s100 ;[fool]Fa2KUB?4ZeW:Cz3
+R13
+32
+R2
+!i10b 1
+R14
+R22
+R23
+!i113 0
+R17
+R18
