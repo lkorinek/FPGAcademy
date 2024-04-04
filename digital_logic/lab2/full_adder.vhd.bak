@@ -1,0 +1,24 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity full_adder is
+	port (c_in : in std_logic;
+			a, b : in std_logic;
+			s : out std_logic;
+			c_out: out std_logic;);
+end;
+
+architecture Behavior of full_adder is
+begin
+	s <= c_in xor (a xor b)
+end;
+
+
+
+
+
+
+
+
+
+

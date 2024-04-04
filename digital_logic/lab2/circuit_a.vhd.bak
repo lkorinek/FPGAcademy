@@ -1,0 +1,22 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity circuit_a is
+	port (bin_num : in std_logic_vector(3 downto 0);
+			a_out : out std_logic_vector(3 downto 0));
+end;
+
+architecture Behavior of  is
+begin
+
+end;
+
+
+
+
+
+
+
+
+
+
