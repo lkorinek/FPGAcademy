@@ -1,0 +1,17 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity part3 is
+	port (CLK : in std_logic;
+			HEX0 	: out std_logic_vector(0 to 6));
+end entity;
+
+architecture Behavior of part3 is
+
+component num_7seg_display
+	port (bcd_num : in std_logic_vector(3 downto 0);
+			hex : out std_logic_vector(0 to 6));
+end component;
+
+begin
+end;

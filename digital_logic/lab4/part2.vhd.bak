@@ -1,0 +1,17 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity part2 is
+	port (SW		: in std_logic_vector(9 downto 0);
+			KEY  	: in std_logic_vector(0 to 3);
+			HEX0 	: out std_logic_vector(0 to 6);
+			HEX1 	: out std_logic_vector(0 to 6));
+end entity;
+
+architecture Behavior of part2 is
+begin
+	process(clk)
+		variable bin : unsigned(5 downto 0) := "00000";
+	begin
+	end process;
+end;
